@@ -1,7 +1,7 @@
 from bardapi import Bard
 
 def ask_bard(question):
-    token = 'XwiEgNvFgeuHJfKcQtokP6VJ8SYVJaU3gBnM61djHC8IiBnjcrxxcH0M0dWF-l08024izg.'  # あなたの__Secure-1PSID値 
+    token = 'XXXXXXXXXXXX'  # あなたの__Secure-1PSID値 
     bard = Bard(token=token)
     step = bard.get_answer("内容からタスクを3ステップに分けて下さい" + question)['content']
     task1 = bard.get_answer("タスクのステップ1を実行してください" + step)['content']
